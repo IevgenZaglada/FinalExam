@@ -23,6 +23,10 @@ $(function() {
          columnWidth: 300
         });
 
+        function removeResults() {
+            $('.discover__search_clear').remove();
+        }
+
         function searchRequest() {
         var $input = $('.discover__search_input').val();
             $.ajax({
@@ -30,7 +34,9 @@ $(function() {
             // dataType: 'jsonp',
             success: function(data) {
                 if ( parseInt(data.totalHits) === 0)  {
-                return false;
+                    removeResults();
+                    $('.discover__box_grid').append('<p class="discover__search_clear">Search request "' + $input + '" not found </p>');
+                    return false;
                 } else 
                 var pictureList = tmpl($('#box_template').html(), data);
                 $('.discover__box_grid').remove();

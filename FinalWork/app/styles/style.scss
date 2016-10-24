@@ -281,7 +281,7 @@
 		font-size: 22px;
 		color: #333;
 		width: 280px;
-		margin: 0 auto 8px; 
+		margin: 0 auto 8px;
 	}
 	&__box {
 		height: 900px;
@@ -296,6 +296,11 @@
 	&__search {
 		width: 280px;
 		margin: 0 auto;
+		&_clear {
+			font-family: $font-stack2;
+			font-size: 14px;
+			color: #333;
+		}
 		&_title {
 			font-family: $font-stack3;
 			font-size: 18px;
@@ -360,24 +365,29 @@
 		top: 19%;
 	}
 	.grid__item_text3 {
-		top: 33%;
+		top: 31%;
 	}
 	.grid__item_text4 {
 		top: 47%;
 	}
 	.grid__item_text5 {
-		top: 60%;
+		top: 59%;
 	}
 	.grid__item_text6 {
-		top: 74%;
+		top: 72%;
 	}
 	.grid__item_text7 {
-		top: 87%;
+		top: 85%;
 	}
 	.grid__item_text:hover {
 		color: #ff4e50;
 	}
 }
+.discover__header_min {
+		font-size: 14px;
+		font-family: $font-stack1;
+		color: #333;
+	}
 
 .footer {
 	border-top: 4px solid #ff4e50;
@@ -781,6 +791,11 @@
 	&__search {
 		width: 416px;
 		margin: 0 auto;
+		&_clear {
+			font-family: $font-stack2;
+			font-size: 18px;
+			color: #333;
+		}
 		&_title {
 			font-family: $font-stack3;
 			font-size: 18px;
@@ -1297,6 +1312,11 @@
 	&__search {
 		width: 416px;
 		margin: 0 auto;
+		&_clear {
+			font-family: $font-stack2;
+			font-size: 22px;
+			color: #333;
+		}
 		&_title {
 			font-family: $font-stack3;
 			font-size: 18px;

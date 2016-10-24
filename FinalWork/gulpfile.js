@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 
 
 	gulp.task('mySass', function() {
-		return gulp.src(['app/styles/main.scss', 'app/styles/styleie8.scss'])
+		return gulp.src(['app/styles/style.scss', 'app/styles/styleie8.scss'])
 		.pipe(sass())
 		.pipe(gulp.dest('dist/css/'))
 	});
